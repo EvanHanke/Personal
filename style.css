@@ -1,0 +1,53 @@
+.column{
+  float:left;
+  padding: 5px;
+}
+
+.option{
+  padding: 5px;
+  min-width:30vw;
+  outline: solid white 1px;
+  font-family: 'Lekton', sans-serif;
+  cursor: pointer;
+}
+
+#content{
+  padding: 5px;
+  margin-top: 3.5px;
+  margin-right: 5vw;
+  float:right;
+  min-width: 55vw;
+  border: solid white 1px;
+}
+
+#back-container{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+#back-image{
+  position:fixed;
+  width:150vw;
+  height:150vh;
+}
+
+#main{
+  position:absolute;
+  float:left;
+  width: 99vw;
+  background-color:#00000000;
+  color:white;
+  z-index:1;
+  overflow:hidden;
+}
+
+h1{
+  cursor: pointer;
+  font-style: italic;
+  font-family: 'Lekton', sans-serif;
+  border-bottom: dotted white 1px;
+}
