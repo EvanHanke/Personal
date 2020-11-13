@@ -49,7 +49,7 @@ var txtfile;
 var selected;
 
 $.getJSON("https://evanhanke.github.io/Personal/descriptions.json", function(json) {
-    console.log(json); // this will show the info it in firebug console
+    contentdiv.innerHTML = json;
 });
 
 document.body.onload = function(){
