@@ -48,9 +48,10 @@ var contentdiv = document.getElementById("content");
 var txtfile;
 var selected;
 console.log("test");
-$.getJSON("https://evanhanke.github.io/Personal/descriptions.json", function(json) {
-    contentdiv.innerHTML = json;
-    console.log(json);
+$.getJSON("https://evanhanke.github.io/Personal/descriptions.json",
+    function(json) {
+    content = json;
+    console.log("load");
 });
 
 document.body.onload = function(){

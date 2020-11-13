@@ -1,16 +1,14 @@
-obj {[
-"Welcome to my landing page where I link to the various creative
-and technical work I\'ve done, which doubles as a directory showcasing websites
-I\'ve made. ",
+{
+  "array" : [
+  "Welcome to my landing page where I link to the various creative
+  and technical work I\'ve done, which doubles as a directory showcasing websites
+  I\'ve made. ",
+  "New Genesis Artform is a website I made to showcase my artistic writings, videos, and music
+  guided by common themes of technological transhumanism.",
+  "Scream In To Void is a brand under which I released a computer game, The Den of Worms.",
+  "Synesthesia is a website which hosts several videos I made experimenting with
+  live processed audio reactive visuals.",
+  "My resume coded into html if you would like to hire me for some sort of project."
+  ]
 
-"New Genesis Artform is a website I made to showcase my artistic writings, videos, and music
-guided by common themes of technological transhumanism.",
-
-
-"Scream In To Void is a brand under which I released a computer game, The Den of Worms.",
-
-"Synesthesia is a website which hosts several videos I made experimenting with
-live processed audio reactive visuals.",
-
-"My resume coded into html if you would like to hire me for some sort of project."
-]}
+}
