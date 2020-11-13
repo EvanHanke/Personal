@@ -22,7 +22,6 @@ class Option{
   }
 
   myanimate(){
-    console.log(this);
     if(this.hovered && this.timer < 1){
       this.timer += 0.1;
     }
@@ -47,10 +46,10 @@ var options = []; //array of option objects on the website
 var contentdiv = document.getElementById("content");
 var txtfile;
 var selected;
-console.log("test");
-$.getJSON("https://evanhanke.github.io/Personal/descriptions.json",
-    function(json) {
-    console.log("load");
+
+$.get("https://evanhanke.github.io/Personal/descriptions.txt",
+    function(data) {
+    console.log(data);
 });
 
 document.body.onload = function(){
