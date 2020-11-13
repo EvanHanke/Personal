@@ -63,8 +63,8 @@ $.get("https://evanhanke.github.io/Personal/descriptions.txt",
 function init(){
 
   option_div = document.getElementsByClassName("option")[0];
-  options.push(option_div, descs[1]);
-  for(i = 1; i < descs.length; i++){
+  options.push(new Option(option_div, descs[2]));
+  for(i = 1; i < descs.length+1; i++){
     var clone = option_div.cloneNode( true );
     clone.innerText = descs[i+2].split("\n")[1];
     document.getElementById('sidebar').appendChild(clone );
