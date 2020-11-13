@@ -1,4 +1,3 @@
-#
 Welcome to my homepage.
 The links provide access to work I've done
 and websites I've made.
@@ -14,3 +13,7 @@ Misc
 Collection of synesthetic audio-visuals as well as
 excursions into 3D modeling and whatever else
 doesn't fit.
+#
+Resume
+Link to my online resume.
+#
