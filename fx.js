@@ -48,10 +48,13 @@ var contentdiv = document.getElementById("content");
 var txtfile;
 var selected;
 
+$.getJSON("https://evanhanke.github.io/Personal/descriptions.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
+
 document.body.onload = function(){
 
-  readTextFile("descriptions.txt");
-  console.log(txtfile);
+
   option_divs = document.getElementsByClassName("option");
   for(i = 0; i < option_divs.length; i++){
     options.push(new Option(option_divs[i]));
@@ -62,10 +65,11 @@ document.body.onload = function(){
 function readTextFile(file){
     var request = new XMLHttpRequest();
     request.open("GET", file);
+    console.log(txtfile);
     request.onreadystatechange = function() {
-    if (request.readyState === 4) {
-        txtfile = request.responseText;
+    if (request.readyState === 0) {
         contentdiv.innterHTML = "loaded";
+        console.log(txtfile);
     }
   }
   request.send();
