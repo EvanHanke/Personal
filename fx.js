@@ -47,9 +47,10 @@ var options = []; //array of option objects on the website
 var contentdiv = document.getElementById("content");
 var txtfile;
 var selected;
-
+console.log("test");
 $.getJSON("https://evanhanke.github.io/Personal/descriptions.json", function(json) {
     contentdiv.innerHTML = json;
+    console.log(json);
 });
 
 document.body.onload = function(){
