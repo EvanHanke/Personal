@@ -20,7 +20,7 @@ class Option{
   }
   unhover(){
     if(this == selected){
-      contentdiv.textContent = descs[1];
+      contentdiv.textContent = descs[0];
       selected = null;
     }
     this.hovered = false;
@@ -54,8 +54,8 @@ var selected = null;
 
 $.get("https://evanhanke.github.io/Personal/descriptions.txt",
     function(data) {
-    descs = String(data).split("#");
-    contentdiv.innerHTML = descs[1];
+    descs = String(data).split("*");
+    contentdiv.innerText = descs[0];
     console.log(descs);
     init();
 });
@@ -63,12 +63,12 @@ $.get("https://evanhanke.github.io/Personal/descriptions.txt",
 function init(){
 
   option_div = document.getElementsByClassName("option")[0];
-  options.push(new Option(option_div, descs[2]));
-  for(i = 1; i < descs.length+1; i++){
+  options.push(new Option(option_div, descs[1]));
+  for(i = 1; i < descs.length-2; i++){
     var clone = option_div.cloneNode( true );
-    clone.innerText = descs[i+2].split("\n")[1];
+    clone.innerText = descs[i+1].split("\n")[1];
     document.getElementById('sidebar').appendChild(clone );
-    options.push(new Option(clone, descs[i+2]));
+    options.push(new Option(clone, descs[i+1]));
   }
 
 }
