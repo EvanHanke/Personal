@@ -18,7 +18,7 @@ onmousemove = function(e){
 
   var vid = document.getElementById('backvid');
   vid.style.left = String(delta_x) + "%";
-  vid.style.top = String(delta_y) + "%";
+  vid.style.top = String(delta_y-13) + "%";
 
 
 }

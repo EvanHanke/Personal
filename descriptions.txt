@@ -3,7 +3,8 @@ The links provide access to work I've done
 and websites I've made.
 *
 New Genesis Artform
-an experimental art project of mine.
+-A platform exploring technological and
+transcendental themes in artistic experimentation.
 #
 https://evanhanke.github.io/Personal/NGEWebsite/story
 *
@@ -23,5 +24,5 @@ https://www.screamintovoid.xyz/
 Resume
 -Link to my online resume.
 #
-https://evanhanke.github.io/Resume/
+https://evanhanke.github.io/about/
 *
