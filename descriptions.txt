@@ -3,7 +3,9 @@ The links provide access to work I've done
 and websites I've made.
 *
 New Genesis Artform
- an experimental art project of mine.
+an experimental art project of mine.
+#
+
 *
 Sceam Into Void
 -the name underwhich I released "Den of Worms",
