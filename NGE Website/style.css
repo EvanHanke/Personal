@@ -1,0 +1,78 @@
+body{
+  background-color: black;
+  color: white;
+}
+h1{
+  text-align: center;
+  font-style: italic;
+}
+mark {
+  background-color: #FFFFFFFF;
+  color: black;
+}
+video{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+}
+
+h3{
+  padding-bottom: 5vh;
+}
+
+#about{
+  font-size: 16px;
+  color: white;
+  opacity: 0.0;
+  text-align: justify;
+  offset-left: 1%;
+  margin-left: 5%;
+}
+#sidebar{
+  text-align: left;
+  width:17%;
+  margin-right:5%;
+  outline: solid white 1px;
+}
+#info{
+  width:50%;
+}
+
+
+.center{
+  padding-top: 5vh;
+  text-align: center;
+  max-height: 90vh;
+  overflow:hidden;
+}
+
+.column{
+  float:left;
+  height: 100%;
+}
+
+.overlay {
+    cursor: pointer;
+position:absolute;
+float:left;
+width:99vw;
+height:10%;
+background-color:#00000000;
+color:black;
+z-index:1;
+text-align: center;
+top:40%;
+left:1vw;
+font-family: 'Antic Didone', serif;
+overflow:hidden;
+}
+.vidwrapper{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
