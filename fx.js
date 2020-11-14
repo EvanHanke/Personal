@@ -6,7 +6,7 @@ class Option{
     this.div.onmouseenter = this.hover.bind(this);
     this.div.onmouseleave = this.unhover.bind(this);
     this.div.onmouseclick = this.hover.bind(this);
-    this.div.onmouseclick = this.click.bind(this);
+    this.div.onclick = this.click.bind(this);
     this.hovered = false;
     this.timer = 0;
     this.anim = null;
@@ -70,13 +70,13 @@ function init(){
 
   option_div = document.getElementsByClassName("option")[0];
   var x = descs[1].split("#");
-  options.push(new Option(option_div, x[1], x[0]));
+  options.push(new Option(option_div, x[0], x[1]));
   for(i = 1; i < descs.length-2; i++){
     var clone = option_div.cloneNode( true );
     x = descs[i+1].split("#");
     clone.innerText = descs[i+1].split("\n")[1];
     document.getElementById('sidebar').appendChild(clone );
-    options.push(new Option(clone, x[1], x[0]);
+    options.push(new Option(clone, x[0], x[1]));
   }
 
 }
