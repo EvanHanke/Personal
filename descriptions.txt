@@ -6,7 +6,7 @@ New Genesis Artform
 -A platform exploring technological and
 transcendental themes in artistic experimentation.
 #
-https://evanhanke.github.io/Personal/NGEWebsite/story
+https://evanhanke.github.io/Personal/NGEWebsite/about
 *
 Sceam Into Void
 -the name underwhich I released "Den of Worms",
@@ -24,5 +24,5 @@ https://www.screamintovoid.xyz/
 Resume
 -Link to my online resume.
 #
-https://evanhanke.github.io/about/
+https://evanhanke.github.io/Resume/
 *
