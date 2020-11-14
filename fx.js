@@ -1,15 +1,21 @@
 //option class with animation methods
 class Option{
 
-  constructor(div, desc){
+  constructor(div, desc, link){
     this.div = div;
     this.div.onmouseenter = this.hover.bind(this);
     this.div.onmouseleave = this.unhover.bind(this);
     this.div.onmouseclick = this.hover.bind(this);
+    this.div.onmouseclick = this.click.bind(this);
     this.hovered = false;
     this.timer = 0;
     this.anim = null;
     this.desc = desc;
+    this.link = link;
+  }
+
+  click(){
+    window.open(this.link, '_blank');
   }
 
   hover(){
@@ -63,12 +69,14 @@ $.get("https://evanhanke.github.io/Personal/descriptions.txt",
 function init(){
 
   option_div = document.getElementsByClassName("option")[0];
-  options.push(new Option(option_div, descs[1]));
+  var x = descs[1].split("#");
+  options.push(new Option(option_div, x[1], x[0]));
   for(i = 1; i < descs.length-2; i++){
     var clone = option_div.cloneNode( true );
+    x = descs[i+1].split("#");
     clone.innerText = descs[i+1].split("\n")[1];
     document.getElementById('sidebar').appendChild(clone );
-    options.push(new Option(clone, descs[i+1]));
+    options.push(new Option(clone, x[1], x[0]);
   }
 
 }

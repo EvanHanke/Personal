@@ -5,17 +5,23 @@ and websites I've made.
 New Genesis Artform
 an experimental art project of mine.
 #
-
+https://evanhanke.github.io/Personal/NGEWebsite/story
 *
 Sceam Into Void
 -the name underwhich I released "Den of Worms",
 a computer game.
+#
+https://www.screamintovoid.xyz/den-of-worms
 *
 Misc
 -collection of synesthetic audio-visuals as well as
 excursions into 3D modeling and whatever else
 doesn't fit.
+#
+https://www.screamintovoid.xyz/
 *
 Resume
 -Link to my online resume.
+#
+https://evanhanke.github.io/Resume/
 *
