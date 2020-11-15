@@ -58,7 +58,7 @@ var contentdiv = document.getElementById("content");
 var descs;
 var selected = null;
 
-$.get("https://evanhanke.github.io/Personal/descriptions.txt",
+$.get("descriptions.txt",
     function(data) {
     descs = String(data).split("*");
     contentdiv.innerText = descs[0];
