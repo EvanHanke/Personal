@@ -59,8 +59,8 @@ var descs;
 var selected = null;
 
 
-xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-$.get("descriptions.txt",
+
+$.get("http://www.evanhanke.com/descriptions.txt",
     function(data) {
     descs = String(data).split("*");
     contentdiv.innerText = descs[0];
