@@ -27,12 +27,13 @@ h3{
   opacity: 0.0;
   text-align: justify;
   offset-left: 1%;
-  margin-left: 5%;
 }
 #sidebar{
+  float:left;
   text-align: left;
-  width:17%;
+  width:15%;
   margin-right:5%;
+  margin-left:5%;
   outline: solid white 1px;
 }
 #info{
