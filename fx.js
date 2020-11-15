@@ -58,6 +58,8 @@ var contentdiv = document.getElementById("content");
 var descs;
 var selected = null;
 
+
+xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
 $.get("descriptions.txt",
     function(data) {
     descs = String(data).split("*");
