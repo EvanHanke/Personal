@@ -5,8 +5,8 @@ class Option{
     this.div = div;
     this.div.onmouseenter = this.hover.bind(this);
     this.div.onmouseleave = this.unhover.bind(this);
-    this.div.onmouseclick = this.hover.bind(this);
-    this.div.onclick = this.click.bind(this);
+    this.div.addEventListener('touchstart',this.touch.bind(this), false);
+    this.div.addEventListener('click',this.click.bind(this), false);
     this.hovered = false;
     this.timer = 0;
     this.anim = null;
@@ -14,14 +14,37 @@ class Option{
     this.link = link;
   }
 
-  click(){
+  click(ev){
     window.open(this.link, '_blank');
+    ev.preventDefault();
+  }
+
+  touch(ev){
+
+    if(selected != this){
+      this.hover();
+      visitbtn.css("display", "inline");
+    }
+    else{
+      this.unhover();
+      visitbtn.css("display", "none");
+    }
+
+    ev.preventDefault();
   }
 
   hover(){
+    console.log("hover");
+    if(selected != this && selected != null){
+      selected.hovered = false;
+      selected.timer = 1;
+      clearInterval(selected.anim);
+      selected.anim= setInterval(selected.myanimate.bind(selected), 10);
+    }
     selected = this;
     contentdiv.textContent = this.desc;
     this.hovered = true;
+    clearInterval(this.anim);
     this.anim = setInterval(this.myanimate.bind(this), 10);
   }
   unhover(){
@@ -34,13 +57,15 @@ class Option{
 
   myanimate(){
     if(this.hovered && this.timer < 1){
-      this.timer += 0.1;
+      this.timer += 0.05;
     }
     else if (!this.hovered && this.timer > 0){
-      this.timer -= 0.1;
+      this.timer -= 0.05;
     }
 
-    this.div.style.marginLeft = String(this.timer*5) + "%";
+    var x = (this.timer*5);
+    if (x < 0) x = 0;
+    this.div.style.left = String(x) + "%";
 
     if(this.timer < 0 && this.hovered == false){
       clearInterval(this.anim);
@@ -57,7 +82,7 @@ var options = []; //array of option objects on the website
 var contentdiv = document.getElementById("content");
 var descs;
 var selected = null;
-
+var visitbtn;
 
 
 $.get("http://www.evanhanke.com/descriptions.txt",
@@ -69,6 +94,15 @@ $.get("http://www.evanhanke.com/descriptions.txt",
 });
 
 function init(){
+  visitbtn = $("#mobilelink");
+  visitbtn[0].addEventListener('touchstart', function(){
+      window.open(selected.link, '_blank');
+    }, false);
+
+  visitbtn.css("display", "none");
+
+
+
 
   option_div = document.getElementsByClassName("option")[0];
   var x = descs[1].split("#");
