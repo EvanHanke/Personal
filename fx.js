@@ -96,9 +96,9 @@ $.get("http://www.evanhanke.com/descriptions.txt",
 
 function init(){
   visitbtn = $("#mobilelink");
-  visitbtn[0].addEventListener('touchstart', function(){
+  $("#mobilelink").on("touchstart click", function(){
       window.open(selected.link, '_blank');
-    }, false);
+    });
 
   visitbtn.css("display", "none");
 
