@@ -19,10 +19,10 @@ Doodles
 excursions into 3D modeling and whatever else
 doesn't fit.
 #
-https://www.screamintovoid.xyz/
+https://screamintovoid.xyz/
 *
 Resume
 -Link to my online resume.
 #
-https://evanhanke.github.io/Resume/
+https://evanhanke.com/R/Resume/
 *
