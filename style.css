@@ -26,16 +26,10 @@ float:left;
 }
 
 #mobilelink{
-  display: none;
-  position: absolute;
-  bottom: 1vh;
-  left: 10vw;
-  right: 10vw;
   background-color: rgba(255, 255, 255, .9);
-  padding-top: 2.5vh;
   color: black;
-  top: 90vh;
-  padding: auto;
+  width: 100vw;
+  padding:2vw;
 }
 
 #back-container{
@@ -103,6 +97,7 @@ h4{
     float: auto;
     width:90vw;
     height: 20vh;
+
   }
 
 }

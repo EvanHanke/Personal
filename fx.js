@@ -23,7 +23,8 @@ class Option{
 
     if(selected != this){
       this.hover();
-      visitbtn.css("display", "inline");
+      $("#linktxt").text(this.link);
+      visitbtn.css("display", "inline-block");
     }
     else{
       this.unhover();
