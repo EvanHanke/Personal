@@ -107,7 +107,7 @@ function init(){
 
   option_div = document.getElementsByClassName("option")[0];
   var x = descs[1].split("#");
-  option_div.innerText = descs[0].split("\n")[1];
+  option_div.innerText = descs[1].split("\n")[1];
   options.push(new Option(option_div, x[0], x[1]));
   for(i = 1; i < descs.length-2; i++){
     var clone = option_div.cloneNode( true );
