@@ -86,7 +86,7 @@ var selected = null;
 var visitbtn;
 
 
-$.get("http://www.evanhanke.com/descriptions.txt",
+$.get("./descriptions.txt",
     function(data) {
     descs = String(data).split("*");
     contentdiv.innerText = descs[0];
