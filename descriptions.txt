@@ -7,7 +7,7 @@ Astral Web
 #
 https://evanhanke.github.io/AstralPlane/
 *
-Sceam Into Void
+Scream Into Void
 -the name underwhich I released "Den of Worms",
 a computer game.
 #
