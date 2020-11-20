@@ -18,5 +18,5 @@ https://screamintovoid.xyz/
 Resume
 -Link to my online resume.
 #
-https://evanhanke.com/R/Resume/
+https://evanhanke.github.io/Resume/
 *
